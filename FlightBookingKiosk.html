@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!-- saved from url=(0075)file:///C:/Users/Kushagra/Desktop/WEB%20PROJECT/My%20Airport%20Website.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	 <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+
+               <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+               <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+               <!-- Commenting out the third-party jQuery load and using the platform jQuery version.-->
+
+               <!--<script>https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+
+               <g:requires name="scripts/lib/jquery_includes.js" />
+
+               <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">-->
+ 
+  <style>
+  	.row input{
+  		color:grey;
+  	}
+  	.row input :focus{
+  		color:black;
+  	}
+  	
+  	</style>
+  
+  <script>
+  	
+ $(document).ready(function(){
+ 			
+ 		$("#switch1").click(function(){
+ 				$("#retdate").toggle();
+ 		});
+    
+       $("#datepicker1").datepicker();
+     $( "#datepicker2").datepicker();
+
+   
+ 		
+ });
+
+  </script>
+
+</head>
+<body>
+	<div class="container" style="padding-bottom: 15px">
+
+		<p style="font-size:35px;" class="text-primary">Book a flight  <span class="text-secondary" style="font-size:15px">Fly to exciting destinations from your airport</span></p>
+		<form>
+  			<div class="custom-control custom-switch">
+    			<input type="checkbox" class="custom-control-input" id="switch1">
+    			<label class="custom-control-label" for="switch1">One Way</label>
+  			</div>
+		</form>
+		<br>
+	  
+	<div class="row">
+  <div class="col-sm">
+    <div style="font-weight:bold ;color:black">From:</div>
+
+    <select style="width:200px;">
+  	<option>Airport1</option>
+  	<option>Airport2</option>
+  	<option>Airport3</option>
+  	<option style="border-bottom: 10px solid">Airport4</option>
+
+  </select>
+</div>
+    <div class="col-sm">
+      <div style="font-weight:bold ;color:black">To:</div><select style="width:200px">
+  	<option>Airport1</option>
+  	<option>Airport2</option>
+  	<option>Airport3</option>
+  	<option>Airport4</option>
+
+  </select>
+</div>
+    <div class="col-sm">
+      <div style="font-weight:bold ;color:black;">Departure Date:</div><input type="text" id="datepicker1"  style="
+    width: 200px;
+    height: 26px;
+"><script>
+  $( function() {
+    $( "#datepicker1" ).datepicker();
+  } );
+</script>
+    </div>
+          
+    <div class="col-sm">
+      <div id="retdate" style="display: block;">
+      <div style="font-weight:bold ;color:black;">Ret Date:</div><input type="text" id="datepicker2" style="
+    width: 200px;
+    height: 26px;
+">
+    </div>
+    </div></div>
+  
+<div style="margin-bottom:10px;"></div>
+
+<div class="row">
+	 <div class="col-sm" style=""><div style="font-weight:bold ;color:black">To:</div><select style="width:200px">
+  	<option>Airport1</option>
+  	<option>Airport2</option>
+  	<option>Airport3</option>
+  	<option>Airport4</option>
+
+  </select></div>
+   <div class="col-sm" style=""><div style="font-weight:bold ;color:black">To:</div>
+<select style="width:200px">
+  <option>1</option>
+  <option>2</option>
+</select>
+</div>
+   <div class="col-sm" style=""><div style="font-weight:bold ;color:black">To:</div><select style="width:200px;">
+  	<option>Airport1</option>
+  	<option>Airport2</option>
+  	<option>Airport3</option>
+  	<option>Airport4</option>
+
+  </select></div>
+   <div class="col-sm">
+
+
+  </div>
+</div>
+
+  <div style="margin-bottom:10px;"></div>
+  <button class="btn btn-warning" style="border-radius:0px!important;font-size: 15px!important;font-weight: bold!important">Search</button>
+	
+	</div>
+</div></body></html>

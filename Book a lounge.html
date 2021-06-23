@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!-- saved from url=(0075)file:///C:/Users/Kushagra/Desktop/WEB%20PROJECT/My%20Airport%20Website.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	 <link rel="stylesheet" href="file:///C:/Users/Kushagra/Desktop/WEB%20PROJECT/homepage_files/bootstrap.min.css">
+	  <script src="file:///C:/Users/Kushagra/Desktop/WEB%20PROJECT/homepage_files/jquery.min.js.download"></script>
+		  <script src="file:///C:/Users/Kushagra/Desktop/WEB%20PROJECT/homepage_files/popper.min.js.download"></script>
+  <script src="file:///C:/Users/Kushagra/Desktop/WEB%20PROJECT/homepage_files/bootstrap.min.js.download"></script>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="file:///C:/Users/Kushagra/Desktop/WEB%20PROJECT/homepage_files/bootstrap.min.css">
+  <script src="file:///C:/Users/Kushagra/Desktop/WEB%20PROJECT/homepage_files/jquery.min.js.download"></script>
+  <script src="file:///C:/Users/Kushagra/Desktop/WEB%20PROJECT/homepage_files/popper.min.js.download"></script>
+  <script src="file:///C:/Users/Kushagra/Desktop/WEB%20PROJECT/homepage_files/bootstrap.min.js.download"></script>
+  <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+   -->
+   <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.css" />
+  <style>
+  	.row input{
+  		color:grey;
+  	}
+  	.row input :focus{
+  		color:black;
+  	}
+  	
+  	</style>
+  
+  <script>
+  
+ $( function() {
+    $( "#datepicker" ).datepicker(({minDate: 0}));
+   $('.timepicker').timepicker({
+    timeFormat: 'h:mm p',
+    interval: 60,
+    minTime: '10',
+    maxTime: '6:00pm',
+    defaultTime: '11',
+    startTime: '10:00',
+    dynamic: false,
+    dropdown: true,
+    scrollbar: true
+});
+  } );
+
+  	
+  </script>
+
+</head>
+<body >
+<script src="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.js"></script>
+	<div class="container-fluid" style="background: linear-gradient(180deg,#ffffff,rgb(239,239,239));margin:0">
+  <div class="container"style="margin-top:3%">
+
+		<p style="font-size:35px;" class="text-primary">Book the Lounge<span class="text-secondary" style="font-size:15px">&nbsp&nbsp&nbsp&nbspRelax while your flight arrives</span></p>
+  
+  <div class="row"  style="margin-top:5%">
+    <div class="col-sm-4" style="font-size: 14px;margin-left: 0px;" width="20" height="198"><div style="margin:0;font-weight:bold ;color:black;width:inherit">Departure Date and Time:</div><input type="text" id="datepicker" style="
+    width: 203px;
+    height: 24px;;padding:6px 12px 6px 12px"><input type="text" class="timepicker" style="width:75px;height:24px"></div>
+  <div class="col-sm-3" style="font-size: 14px;float:right;"><div style="margin:0;font-weight:bold ;color:black;width:inherit">Promotional Code</div><input type="text" style="
+    width: 203px;
+    height: 24px;">
+  </div>
+
+  </div>
+    
+  
+  <button class="btn btn-warning" style="border-radius:0px!important;font-size: 15px!important;font-weight: bold!important;    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;margin-top: 4%">Get Prices and Book</button>
+  
+  </div></div>
+</body>
+</html>

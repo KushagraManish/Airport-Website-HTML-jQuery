@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <script src="https://kit.fontawesome.com/3befd56551.js"></script>
+	<title>
+		My Airport Website
+	</title>
+	<style>
+		* {
+margin:0;
+padding:0;
+}
+
+#d {
+position:relative;
+height:3.2em;
+
+border:none;
+margin:0 0 30px;
+}
+#nav {
+position:absolute;
+left:50%;top:0;
+margin-left:-475px;
+height:4.8em;
+width:1000px;
+list-style:none;
+}
+#nav li {
+float:left;
+}
+#nav a {
+display:block;
+text-align:center;
+color:#fff;
+height:3.2em;
+width:140px;
+line-height:3.2em;
+text-decoration:none; 
+margin-left:-1px;
+border:none;
+}
+#nav a:hover {
+background:#fff!important;
+color:blue!important;
+}
+#new a:hover{
+  background:fff;
+  color:yellow;
+}
+	</style>
+
+<script>
+  $(document).ready(function(){
+    $("#new").click(function(){
+      $("#checkflights").slideToggle(60);
+      $("#other").css("z-index","-1");
+      $("#other").css("'position","absolute");
+    });
+  
+  });
+</script>
+  
+</head>
+<body>
+
+<div class="bg-primary text-light" id="d">
+<ul id="nav">
+  
+  <li><a href="file:///C:/Users/Kushagra/Desktop/WEB%20PROJECT/homepage.html#">AIRPORTS<i class="fas fa-building"></i></a></li>
+ 
+  
+  <li><a href="file:///C:/Users/Kushagra/Desktop/WEB%20PROJECT/homepage.html#">PARKING<span><i class="fas fa-parking"></i>
+</span></a></li>
+  <li><a href="file:///C:/Users/Kushagra/Desktop/WEB%20PROJECT/homepage.html#">FLIGHTS<i class="fas fa-plane-departure"></i></a></li>
+   <li style="background-color:purple" id="new"><a href="#">CHECK MY FLIGHT</a></li>
+  <li><a href="file:///C:/Users/Kushagra/Desktop/WEB%20PROJECT/homepage.html#">CAR FOR HIRE<i class="fas fa-taxi"></i></a></li>
+   <li><a href="file:///C:/Users/Kushagra/Desktop/WEB%20PROJECT/homepage.html#">LOUNGE<i class="fas fa-hotel"></i></a></li>
+    <li ><a href="file:///C:/Users/Kushagra/Desktop/WEB%20PROJECT/homepage.html#">SECURITY<i class="fas fa-guard"></i></a></li>
+  
+</ul>
+</div>
+
+
+</body>
+</html>

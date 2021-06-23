@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!-- saved from url=(0075)file:///C:/Users/Kushagra/Desktop/WEB%20PROJECT/My%20Airport%20Website.html -->
+<html><head>
+  <meta content="charset=UTF-8">
+  
+   <link rel="stylesheet" href="file:///C:/Users/Kushagra/Desktop/WEB%20PROJECT/homepage_files/bootstrap.min.css">
+  
+    <script src="file:///C:/Users/Kushagra/Desktop/WEB%20PROJECT/homepage_files/jquery.min.js.download"></script>
+      <script src="file:///C:/Users/Kushagra/Desktop/WEB%20PROJECT/homepage_files/popper.min.js.download"></script>
+  <script src="file:///C:/Users/Kushagra/Desktop/WEB%20PROJECT/homepage_files/bootstrap.min.js.download"></script>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <script src="file:///C:/Users/Kushagra/Desktop/WEB%20PROJECT/homepage_files/jquery.min.js.download"></script>
+<script type="text/javascript" src="file:///C:/Users/Kushagra/Desktop/WEB%20PROJECT/My%20Airport%20Website_files/moment.min.js.download"></script>
+  <script src="file:///C:/Users/Kushagra/Desktop/WEB%20PROJECT/homepage_files/popper.min.js.download"></script>
+  <script src="file:///C:/Users/Kushagra/Desktop/WEB%20PROJECT/homepage_files/bootstrap.min.js.download"></script>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  
+ 
+  <style>
+    .row input{
+      color:grey;
+    }
+    .row input :focus{
+      color:black;
+    }
+    
+    </style>
+  
+  <script>
+    $( function() {
+    $( "#datepicker" ).datepicker();
+    $("#datepicker2").datepicker();
+  } );
+ $(document).ready(function(){
+      var a = true;
+    $("#switch1").click(function(){
+        $("#retdate").toggle();
+    });
+   
+   
+    
+ });
+
+      
+  </script>
+
+</head>
+<body>
+  <div class="container" style="padding-bottom: 15px">
+
+    <p style="font-size:35px;" class="text-primary">Book a flight  <span class="text-secondary" style="font-size:15px">Fly to exciting destinations from your airport</span></p>
+    <form>
+        <div class="custom-control custom-switch">
+          <input type="checkbox" class="custom-control-input" id="switch1">
+          <label class="custom-control-label" for="switch1">One Way</label>
+        </div>
+    </form>
+    <br>
+    
+  <div class="row">
+  <div class="col-sm">
+    <div style="font-weight:bold ;color:black">From:</div>
+
+    <select style="width:200px;">
+    <option>Airport1</option>
+    <option>Airport2</option>
+    <option>Airport3</option>
+    <option style="border-bottom: 10px solid">Airport4</option>
+
+  </select>
+</div>
+    <div class="col-sm">
+      <div style="font-weight:bold ;color:black">To:</div><select style="width:200px">
+    <option>Airport1</option>
+    <option>Airport2</option>
+    <option>Airport3</option>
+    <option>Airport4</option>
+
+  </select>
+</div>
+    <div class="col-sm">
+      <div style="font-weight:bold ;color:black;">Departure Date:</div><input type="text" id="datepicker"  style="
+    width: 200px;
+    height: 26px;
+">
+    </div>
+          
+    <div class="col-sm">
+      <div id="retdate" style="display: block;">
+      <div style="font-weight:bold ;color:black;">Ret Date:</div><input type="text" id="datepicker2"  style="
+    width: 200px;
+    height: 26px;
+">
+    </div>
+    </div></div>
+  
+<div style="margin-bottom:1%"></div>
+
+<div class="row">
+   <div class="col-sm" style=""><div style="font-weight:bold ;color:black">To:</div><select style="width:200px">
+    <option>Airport1</option>
+    <option>Airport2</option>
+    <option>Airport3</option>
+    <option>Airport4</option>
+
+  </select></div>
+   <div class="col-sm" style=""><div style="font-weight:bold ;color:black">To:</div>
+<select style="width:200px">
+  <option>1</option>
+  <option>2</option>
+</select>
+</div>
+   <div class="col-sm" style=""><div style="font-weight:bold ;color:black">To:</div><select style="width:200px;">
+    <option>Airport1</option>
+    <option>Airport2</option>
+    <option>Airport3</option>
+    <option>Airport4</option>
+
+  </select></div>
+   <div class="col-sm">
+
+
+  </div>
+</div>
+
+  <div style="margin-bottom:3%"></div>
+  <button class="btn btn-warning" style="border-radius:0px!important;font-size: 15px!important;font-weight: bold!important">Search</button>
+  
+  </div>
+</div></body></html>
